@@ -3,10 +3,10 @@ Repositório destinado ao desenvolvimento e implementação de bibliotecas, inte
 
 # Software necessário
 Para gerarmos o arquivo .bin necessário para gravar o código na placa STM32F1, estamos utilizando as ferramentas abaixo.
-- Java JDK - http://www.oracle.com/technetwork/java/javase/downloads/index.html
+- Java 8 JDK - http://www.oracle.com/technetwork/java/javase/downloads/index.html
 
       Instale-o em seu caminho padrão. 
-      É recomendado instalar o mais recente (9.0.1).
+      É recomendado instalar a versão 8u152. A mais recente (9.0.1) não funcionou com o eclipse.
       O java é necessário para podermos rodar o Eclipse.
 
 - IDE: Eclipse Neon -  https://github.com/gnu-mcu-eclipse/org.eclipse.epp.packages/releases
@@ -27,6 +27,8 @@ Para gerarmos o arquivo .bin necessário para gravar o código na placa STM32F1,
         
 # Importando o projeto do MBED para o Eclipse
 
+- Extraia o .zip resultante no diretório de escolha (por padrão, "/usuários/(usuário)/gnuarmeclipse/projects")
+- Abra o  Eclipse. Escolha o diretório de workspace (por padrão, "/usuários/(usuário)/gnuarmeclipse/projects")
 
 
 
