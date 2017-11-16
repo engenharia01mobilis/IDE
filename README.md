@@ -3,19 +3,18 @@ Repositório destinado ao desenvolvimento e implementação de bibliotecas, inte
 
 # Software utilizado
 
-- IDE: Eclipse Neon pré-configurado
+- IDE: Eclipse Neon -  https://github.com/gnu-mcu-eclipse/org.eclipse.epp.packages/releases
 
-      Download: https://github.com/gnu-mcu-eclipse/org.eclipse.epp.packages/releases
       Essa instalação já vem com plugins interessantes e é portável.
       
       
-- Compilador: GNU ARM Embedded Toolchain versão 4.9.3
-      Download: https://launchpad.net/gcc-arm-embedded/+milestone/4.9-2015-q3-update
-      Versões acima de 6 não são compatíveis com a biblioteca MBED. Podemos, porém, tentar a versão 5.
+- Compilador: GNU ARM Embedded Toolchain -  https://launchpad.net/gcc-arm-embedded/+milestone/4.9-2015-q3-update
       
-- Build Tools: 
-      Download: https://github.com/gnu-mcu-eclipse/windows-build-tools/releases
       
+      A versão utilizada é a 4.9.3, pois li que versões acima de 6 não são compatíveis com a biblioteca MBED. Podemos, porém, tentar a versão 5.
+      
+- Windows Build Tools: https://github.com/gnu-mcu-eclipse/windows-build-tools/releases
+     
 # Configurando o Eclipse
 
 
