@@ -21,12 +21,12 @@ Para gerarmos o arquivo .bin necessário para gravar o código na placa STM32F1,
       
       Instale-o em seu caminho padrão.
         
-# Importando o projeto do MBED
+# Importando o projeto do MBED para o Eclipse
 
 
 
 
 # Guias utilizados
-- IDE:
+- https://gnu-mcu-eclipse.github.io/install/
 - Compilador: https://gnu-mcu-eclipse.github.io/toolchain/arm/install/
 - Build Tools: https://gnu-mcu-eclipse.github.io/windows-build-tools/install/
