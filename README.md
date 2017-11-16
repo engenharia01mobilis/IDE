@@ -1,13 +1,17 @@
 # O que é
 Repositório destinado ao desenvolvimento e implementação de bibliotecas, interfaces e códigos fonte para o controle da central de acionamentos através do STM32F103c8t6.
 
-# Software utilizado
+# Software necessário
 Para gerarmos o arquivo .bin necessário para gravar o código na placa STM32F1, estamos utilizando as ferramentas abaixo.
+- Java JDK - http://www.oracle.com/technetwork/java/javase/downloads/index.html
 
+      Instale-o em seu caminho padrão. 
+      É recomendado instalar o mais recente (9.0.1).
+      O java é necessário para podermos rodar o Eclipse.
 
 - IDE: Eclipse Neon -  https://github.com/gnu-mcu-eclipse/org.eclipse.epp.packages/releases
 
-      Extraia para sua pasta de preferência.
+      A princípio, pode ser extraído para qualquer local, mas sugiro que o diretório padrão seja "/usuários/(usuário)/gnuarmeclipse"
       Essa instalação já vem com plugins interessantes e é portável. 
       
       
