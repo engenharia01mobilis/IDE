@@ -26,42 +26,40 @@ Para gerarmos o arquivo .bin necessário para gravar o código na placa STM32F1,
       Instale-o em seu caminho padrão.
         
 # Importando o projeto do MBED para o Eclipse
-- Acesse o projeto no MBED, clique com o botão direito e selecione "Export Program"
-![Exportando](fotosPassoAPasso/mbedExport1.png)
-- Escolha a opção Gnu Arm Eclipse
-![Exportando](fotosPassoAPasso/mbedExport2.png)
-- Extraia o .zip resultante no diretório de escolha (por padrão, "/usuários/(usuário)/gnuarmeclipse/projects")
-- Abra o  Eclipse. Escolha o diretório de workspace (por padrão, "/usuários/(usuário)/gnuarmeclipse/projects")
-![Exportando](fotosPassoAPasso/eclipseSetup1.png)
-- Abra o projeto que você exportou do MBED
-![Exportando](fotosPassoAPasso/eclipseSetup2.png)
-
-![Exportando](fotosPassoAPasso/eclipseSetup3.png)
-
-![Exportando](fotosPassoAPasso/eclipseSetup4.png)
+- Acesse o projeto no MBED, clique com o botão direito e selecione "Export Program"<br>
+![Exportando](fotosPassoAPasso/mbedExport1.png)<br>
+- Escolha a opção Gnu Arm Eclipse<br>
+![Exportando](fotosPassoAPasso/mbedExport2.png)<br>
+- Extraia o .zip resultante no diretório de escolha (por padrão, "/usuários/(usuário)/gnuarmeclipse/projects")<br>
+- Abra o  Eclipse. Escolha o diretório de workspace (por padrão, "/usuários/(usuário)/gnuarmeclipse/projects")<br>
+![Exportando](fotosPassoAPasso/eclipseSetup1.png)<br>
+- Abra o projeto que você exportou do MBED<br>
+![Exportando](fotosPassoAPasso/eclipseSetup2.png)<br>
+![Exportando](fotosPassoAPasso/eclipseSetup3.png)<br>
+![Exportando](fotosPassoAPasso/eclipseSetup4.png)<br>
 Após selecionar a pasta do projeto, clique em 'Finish'. O projeto deve ter sido adicionado à barra lateral esquerda do Eclipse.
 
-- Clique com o botão direito no projeto e selecione "Properties". Em C/C++ Build -> Settings -> Tool Settings, verifique os campos "Toolchain path" e "Build Tools path". 
-![Exportando](fotosPassoAPasso/eclipseSetup5.png)
-![Exportando](fotosPassoAPasso/eclipseSetup6.png)
+- Clique com o botão direito no projeto e selecione "Properties". Em C/C++ Build -> Settings -> Tool Settings, verifique os campos "Toolchain path" e "Build Tools path". <br>
+![Exportando](fotosPassoAPasso/eclipseSetup5.png)<br>
+![Exportando](fotosPassoAPasso/eclipseSetup6.png)<br>
 
        O Eclipse precisa do Path acessar essas ferramentas. Em caso de dúvida sobre subpasta selecionar: Para o Compilador (Toolchain), a pasta a ser selecionada é a que contém vários arquivos com o prefixo "arm-none-eabi". Para a Build Tools, a pasta é a que contém os arquivos "make", "mkdir", etc. 
 
-- Tente compilar o projeto e veja os erros resultantes
-![Exportando](fotosPassoAPasso/eclipseSetup7.png)
-![Exportando](fotosPassoAPasso/eclipseSetup8.png)
-![Exportando](fotosPassoAPasso/eclipseSetup9.png)
+- Tente compilar o projeto e veja os erros resultantes<br>
+![Exportando](fotosPassoAPasso/eclipseSetup7.png)<br>
+![Exportando](fotosPassoAPasso/eclipseSetup8.png)<br>
+![Exportando](fotosPassoAPasso/eclipseSetup9.png)<br>
      
      Note no console as funções (?) que tiveram "undefined reference to __wrap__ALGO". Essas serão as que precisaremos alterar no passo seguinte.
      
-- Adicione um underline *_* em algumas linker flags
-![Exportando](fotosPassoAPasso/eclipseSetup10.png)
-![Exportando](fotosPassoAPasso/eclipseSetup11.png)
+- Adicione um underline *_* em algumas linker flags<br>
+![Exportando](fotosPassoAPasso/eclipseSetup10.png)<br>
+![Exportando](fotosPassoAPasso/eclipseSetup11.png)<br>
 Faça isso para malloc, realloc, free e calloc.
 
-- Clique em Build e seja feliz
-![Exportando](fotosPassoAPasso/eclipseSetup7.png)
-![Exportando](fotosPassoAPasso/eclipseSetup11.png)
+- Clique em Build e seja feliz<br>
+![Exportando](fotosPassoAPasso/eclipseSetup7.png)<br>
+![Exportando](fotosPassoAPasso/eclipseSetup11.png)<br>
 
 
 # Guias utilizados
