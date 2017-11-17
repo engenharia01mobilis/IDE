@@ -19,7 +19,8 @@ Para gerarmos o arquivo .bin necessário para gravar o código na placa STM32F1,
       
       
       Instale-o em seu caminho padrão.
-      A versão utilizada é a 4.9.3, pois li que versões acima de 6 não são compatíveis com a biblioteca MBED. Podemos, porém, tentar a versão 5.
+      A versão utilizada é a 4.9.3, pois li que versões acima de 6 não são compatíveis com a biblioteca MBED.
+      Podemos, porém, tentar a versão 5.
       
 - Windows Build Tools: https://github.com/gnu-mcu-eclipse/windows-build-tools/releases
       
@@ -43,22 +44,25 @@ Após selecionar a pasta do projeto, clique em 'Finish'. O projeto deve ter sido
 ![Exportando](fotosPassoAPasso/eclipseSetup5.png)<br>
 ![Exportando](fotosPassoAPasso/eclipseSetup6.png)<br>
 
-       O Eclipse precisa do Path acessar essas ferramentas. Em caso de dúvida sobre subpasta selecionar: Para o Compilador (Toolchain), a pasta a ser selecionada é a que contém vários arquivos com o prefixo "arm-none-eabi". Para a Build Tools, a pasta é a que contém os arquivos "make", "mkdir", etc. 
+       O Eclipse precisa do Path acessar essas ferramentas. Em caso de dúvida sobre subpasta selecionar:
+       Para o Compilador (Toolchain), a pasta a ser selecionada é a que contém vários arquivos com o prefixo "arm-none-eabi".
+       Para a Build Tools, a pasta é a que contém os arquivos "make", "mkdir", etc. 
 
-<br>
+
 - Tente compilar o projeto e veja os erros resultantes<br>
 ![Exportando](fotosPassoAPasso/eclipseSetup7.png)<br>
 ![Exportando](fotosPassoAPasso/eclipseSetup8.png)<br>
 ![Exportando](fotosPassoAPasso/eclipseSetup9.png)<br>
      
-     Note no console as funções (?) que tiveram "undefined reference to __wrap__ALGO". Essas serão as que precisaremos alterar no passo seguinte.
+     Note no console as funções (?) que tiveram "undefined reference to __wrap__ALGO". 
+     Essas serão as que precisaremos alterar no passo seguinte.
  
- <br>
+
 - Adicione um underline _ em algumas linker flags<br>
 ![Exportando](fotosPassoAPasso/eclipseSetup10.png)<br>
 ![Exportando](fotosPassoAPasso/eclipseSetup11.png)<br>
 Faça isso para malloc, realloc, free e calloc.
-<br>
+
 - Clique em Build e seja feliz<br>
 ![Exportando](fotosPassoAPasso/eclipseSetup7.png)<br>
 ![Exportando](fotosPassoAPasso/eclipseSetup12.png)<br>
