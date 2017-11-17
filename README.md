@@ -1,5 +1,5 @@
 # Mudança de feramentas
-Mbed -> Gnu Arm Eclipse. <br> Gnu é o compilador. Arm é a plataforma alvo, e Eclipse é a IDE que vai facilitar nosso desenvolvimento.
+Mbed -> Gnu Arm Eclipse. <br> Gnu é o compilador. Arm é a plataforma alvo. Eclipse é a IDE que vai facilitar nosso desenvolvimento.
 
 # Software necessário
 Para gerarmos o arquivo .bin necessário para gravar o código na placa STM32F1, estamos utilizando as ferramentas abaixo.
