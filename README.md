@@ -47,20 +47,20 @@ Após selecionar a pasta do projeto, clique em 'Finish'. O projeto deve ter sido
 
 <br>
 - Tente compilar o projeto e veja os erros resultantes<br>
-![Exportando](fotosPassoAPasso/eclipseSetup7.png)<br><br>
-![Exportando](fotosPassoAPasso/eclipseSetup8.png)<br><br>
+![Exportando](fotosPassoAPasso/eclipseSetup7.png)<br>
+![Exportando](fotosPassoAPasso/eclipseSetup8.png)<br>
 ![Exportando](fotosPassoAPasso/eclipseSetup9.png)<br>
      
      Note no console as funções (?) que tiveram "undefined reference to __wrap__ALGO". Essas serão as que precisaremos alterar no passo seguinte.
  
  <br>
 - Adicione um underline *_* em algumas linker flags<br><br>
-![Exportando](fotosPassoAPasso/eclipseSetup10.png)<br><br>
+![Exportando](fotosPassoAPasso/eclipseSetup10.png)<br>
 ![Exportando](fotosPassoAPasso/eclipseSetup11.png)<br>
 Faça isso para malloc, realloc, free e calloc.
 <br>
 - Clique em Build e seja feliz<br>
-![Exportando](fotosPassoAPasso/eclipseSetup7.png)<br><br>
+![Exportando](fotosPassoAPasso/eclipseSetup7.png)<br>
 ![Exportando](fotosPassoAPasso/eclipseSetup12.png)<br>
 
 
