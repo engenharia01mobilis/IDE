@@ -26,14 +26,14 @@ Para gerarmos o arquivo .bin necessário para gravar o código na placa STM32F1,
       Instale-o em seu caminho padrão.
         
 # Importando o projeto do MBED para o Eclipse
-1. Acesse o projeto no MBED, clique com o botão direito e selecione "Export Program"
+- Acesse o projeto no MBED, clique com o botão direito e selecione "Export Program"
 ![Exportando](fotosPassoAPasso/mbedExport1.png)
-2. Escolha a opção Gnu Arm Eclipse
+- Escolha a opção Gnu Arm Eclipse
 ![Exportando](fotosPassoAPasso/mbedExport2.png)
-3. Extraia o .zip resultante no diretório de escolha (por padrão, "/usuários/(usuário)/gnuarmeclipse/projects")
-4. Abra o  Eclipse. Escolha o diretório de workspace (por padrão, "/usuários/(usuário)/gnuarmeclipse/projects")
+- Extraia o .zip resultante no diretório de escolha (por padrão, "/usuários/(usuário)/gnuarmeclipse/projects")
+- Abra o  Eclipse. Escolha o diretório de workspace (por padrão, "/usuários/(usuário)/gnuarmeclipse/projects")
 ![Exportando](fotosPassoAPasso/eclipseSetup1.png)
-5. Abra o projeto que você exportou do MBED
+- Abra o projeto que você exportou do MBED
 ![Exportando](fotosPassoAPasso/eclipseSetup2.png)
 
 ![Exportando](fotosPassoAPasso/eclipseSetup3.png)
@@ -41,25 +41,25 @@ Para gerarmos o arquivo .bin necessário para gravar o código na placa STM32F1,
 ![Exportando](fotosPassoAPasso/eclipseSetup4.png)
 Após selecionar a pasta do projeto, clique em 'Finish'. O projeto deve ter sido adicionado à barra lateral esquerda do Eclipse.
 
-6. Clique com o botão direito no projeto e selecione "Properties". Em C/C++ Build -> Settings -> Tool Settings, verifique os campos "Toolchain path" e "Build Tools path". 
+- Clique com o botão direito no projeto e selecione "Properties". Em C/C++ Build -> Settings -> Tool Settings, verifique os campos "Toolchain path" e "Build Tools path". 
 ![Exportando](fotosPassoAPasso/eclipseSetup5.png)
 ![Exportando](fotosPassoAPasso/eclipseSetup6.png)
 
        O Eclipse precisa do Path acessar essas ferramentas. Em caso de dúvida sobre subpasta selecionar: Para o Compilador (Toolchain), a pasta a ser selecionada é a que contém vários arquivos com o prefixo "arm-none-eabi". Para a Build Tools, a pasta é a que contém os arquivos "make", "mkdir", etc. 
 
-7. Tente compilar o projeto e veja os erros resultantes
+- Tente compilar o projeto e veja os erros resultantes
 ![Exportando](fotosPassoAPasso/eclipseSetup7.png)
 ![Exportando](fotosPassoAPasso/eclipseSetup8.png)
 ![Exportando](fotosPassoAPasso/eclipseSetup9.png)
      
      Note no console as funções (?) que tiveram "undefined reference to __wrap__ALGO". Essas serão as que precisaremos alterar no passo seguinte.
      
-8. Adicione um underline *_* em algumas linker flags
+- Adicione um underline *_* em algumas linker flags
 ![Exportando](fotosPassoAPasso/eclipseSetup10.png)
 ![Exportando](fotosPassoAPasso/eclipseSetup11.png)
 Faça isso para malloc, realloc, free e calloc.
 
-9. Clique em Build e seja feliz
+- Clique em Build e seja feliz
 ![Exportando](fotosPassoAPasso/eclipseSetup7.png)
 ![Exportando](fotosPassoAPasso/eclipseSetup11.png)
 
