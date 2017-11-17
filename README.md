@@ -1,5 +1,5 @@
-# O que é
-Repositório destinado ao desenvolvimento e implementação de bibliotecas, interfaces e códigos fonte para o controle da central de acionamentos através do STM32F103c8t6.
+# Mudança de feramentas
+Mbed -> Gnu Arm Eclipse. <br> Gnu é o compilador. Arm é a plataforma alvo, e Eclipse é a IDE que vai facilitar nosso desenvolvimento.
 
 # Software necessário
 Para gerarmos o arquivo .bin necessário para gravar o código na placa STM32F1, estamos utilizando as ferramentas abaixo.
