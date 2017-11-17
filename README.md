@@ -54,7 +54,7 @@ Após selecionar a pasta do projeto, clique em 'Finish'. O projeto deve ter sido
      Note no console as funções (?) que tiveram "undefined reference to __wrap__ALGO". Essas serão as que precisaremos alterar no passo seguinte.
  
  <br>
-- Adicione um underline *_* em algumas linker flags<br><br>
+- Adicione um underline *_* em algumas linker flags<br>
 ![Exportando](fotosPassoAPasso/eclipseSetup10.png)<br>
 ![Exportando](fotosPassoAPasso/eclipseSetup11.png)<br>
 Faça isso para malloc, realloc, free e calloc.
